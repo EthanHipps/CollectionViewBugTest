@@ -1,0 +1,195 @@
+/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/bin/mlaunch --launchsim /Users/ethanhipps/Projects/CollectionViewBugTest/CollectionViewBugTest/bin/Debug/net7.0-ios/iossimulator-x64/CollectionViewBugTest.app --device=:v2:udid=FF2D32CD-90F0-43B2-BBFB-784A3636DF6B -sdk 16.0 --argument=-monodevelop-port --argument=10002 --setenv=__XAMARIN_DEBUG_PORT__=10002 --sdkroot /Applications/Xcode.app/Contents/Developer
+xcrun simctl launch --console --terminate-running-process FF2D32CD-90F0-43B2-BBFB-784A3636DF6B com.companyname.collectionviewbugtest -monodevelop-port 10002
+com.companyname.collectionviewbugtest: 57812
+objc[57812]: Class CDPCABackupRecoveryReporter is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreCDPInternal.framework/CoreCDPInternal (0x15fcd7a48) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreCDP.framework/CoreCDP (0x15eeca958). One of the two will be used. Which one is undefined.
+objc[57812]: Class CDPCAReporter is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreCDPInternal.framework/CoreCDPInternal (0x15fcd6f58) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreCDP.framework/CoreCDP (0x15eecaae8). One of the two will be used. Which one is undefined.
+objc[57812]: Class SBFCARendererImageRepresentation is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SpringBoardFoundation.framework/SpringBoardFoundation (0x15ce53028) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/PaperBoardUI.framework/PaperBoardUI (0x15c719218). One of the two will be used. Which one is undefined.
+2022-10-28 12:10:58.948997-0400 CollectionViewBugTest[57812:1068713] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=57812
+2022-10-28 12:10:58.951990-0400 CollectionViewBugTest[57812:1068713] SecTaskCopyDebugDescription: CollectionViewBu[57812]/0#-1 LF=0
+2022-10-28 12:10:59.097461-0400 CollectionViewBugTest[57812:1068713] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=57812
+2022-10-28 12:10:59.098432-0400 CollectionViewBugTest[57812:1068713] SecTaskCopyDebugDescription: CollectionViewBu[57812]/0#-1 LF=0
+2022-10-28 12:11:00.207425-0400 CollectionViewBugTest[57812:1068867] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=57812
+2022-10-28 12:11:00.209246-0400 CollectionViewBugTest[57812:1068867] SecTaskCopyDebugDescription: CollectionViewBu[57812]/0#-1 LF=0
+2022-10-28 12:11:00.575089-0400 CollectionViewBugTest[57812:1068713] [TableView] Warning once only: UITableView was told to layout its visible cells and other contents without being in the view hierarchy (the table view or one of its superviews has not been added to a window). This may cause bugs by forcing views inside the table view to load and perform layout without accurate information (e.g. table view bounds, trait collection, layout margins, safe area insets, etc), and will also cause unnecessary performance overhead due to extra layout passes. Make a symbolic breakpoint at UITableViewAlertForLayoutOutsideViewHierarchy to catch this in the debugger and see what caused this to occur, so you can avoid this action altogether if possible, or defer it until the table view has been added to a window. Table view: <_UIMoreListTableView: 0x7f9d6ef96000; frame = (0 0; 0 0); clipsToBounds = YES; gestureRecognizers = <NSArray: 0x600001d3cc00>; backgroundColor = <UIDynamicSystemColor: 0x60000060d540; name = tableBackgroundColor>; layer = <CALayer: 0x6000014be380>; contentOffset: {0, 0}; contentSize: {0, 0}; adjustedContentInset: {0, 0, 0, 0}; dataSource: <UIMoreListController: 0x7f9d6f30c690>>
+2022-10-28 12:11:01.114382-0400 CollectionViewBugTest[57812:1068769] Warning: observer object was not disposed manually with Dispose()
+2022-10-28 12:11:01.114990-0400 CollectionViewBugTest[57812:1068769] Warning: observer object was not disposed manually with Dispose()
+2022-10-28 12:11:02.131827-0400 CollectionViewBugTest[57812:1068713] [TraitCollection] Class CKBrowserSwitcherViewController overrides the -traitCollection getter, which is not supported. If you're trying to override traits, you must use the appropriate API.
+2022-10-28 12:11:07.122725-0400 CollectionViewBugTest[57812:1068713] [unspecified] container_query_get_single_result: error = 2→(98) NOT_CODESIGNED
+2022-10-28 12:11:07.123267-0400 CollectionViewBugTest[57812:1068713] [unspecified] container_system_group_path_for_identifier: error = ((container_error_t)98) NOT_CODESIGNED
+2022-10-28 12:11:07.123383-0400 CollectionViewBugTest[57812:1068713] [MC] Error getting system group container for systemgroup.com.apple.configurationprofiles: 98
+2022-10-28 12:11:07.124138-0400 CollectionViewBugTest[57812:1068713] [MC] Failed to get profile system group container path. Overriding with expected path: /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles
+2022-10-28 12:11:08.238944-0400 CollectionViewBugTest[57812:1068713] *** Assertion failure in -[UICollectionView _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:collectionViewAnimator:], UICollectionView.m:9720
+2022-10-28 12:11:08.700951-0400 CollectionViewBugTest[57812:1068713] 
+Unhandled Exception:
+ObjCRuntime.ObjCException: Objective-C exception thrown.  Name: NSInternalInconsistencyException Reason: Invalid update: invalid number of sections. The number of sections contained in the collection view after the update (3) must be equal to the number of sections contained in the collection view before the update (3), plus or minus the number of sections inserted or deleted (1 inserted, 0 deleted). Collection view: <UICollectionView: 0x7f9d7136ce00; frame = (0 0; 398 1700.33); clipsToBounds = YES; autoresize = W+H; gestureRecognizers = <NSArray: 0x600001d1dc50>; backgroundColor = UIExtendedGrayColorSpace 0 0; layer = <CALayer: 0x600001731580>; contentOffset: {0, 0}; contentSize: {398, 183}; adjustedContentInset: {0, 0, 0, 0}; layout: <Microsoft_Maui_Controls_Handlers_Items_ListViewLayout: 0x7f9d6f39ac70>; dataSource: <Microsoft_Maui_Controls_Handlers_Items_ReorderableItemsViewController_1: 0x7f9d6f529a40>>
+Native stack trace:
+  0   CoreFoundation                      0x00000001100e6378 __exceptionPreprocess + 242
+  1   libobjc.A.dylib                     0x000000011e653baf objc_exception_throw + 48
+  2   Foundation                          0x00000001176f66ac _userInfoForFileAndLine + 0
+  3   UIKitCore                           0x000000012b97d2a1 -[UICollectionView _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:collectionViewAnimator:] + 13198
+  4   UIKitCore                           0x000000012b978aa7 -[UICollectionView _updateSections:updateAction:] + 402
+  5   UIKitCore                           0x000000012b978b73 -[UICollectionView insertSections:] + 64
+  6   UIKit                               0x000000016929111d -[UICollectionViewAccessibility insertSections:] + 42
+  7   libxamarin-dotnet-debug.dylib       0x000000010d4c6379 xamarin_dyn_objc_msgSend + 217
+  8   ???                                 0x0000000150929ca7 0x0 + 5646752935
+  9   libmonosgen-2.0.dylib               0x000000010dc8d46a ves_pinvoke_method + 474
+  10  libmonosgen-2.0.dylib               0x000000010dc802c9 interp_exec_method + 3737
+  11  libmonosgen-2.0.dylib               0x000000010dc7da73 interp_runtime_invoke + 259
+  12  libmonosgen-2.0.dylib               0x000000010daa43ed mono_runtime_try_invoke + 157
+  13  libmonosgen-2.0.dylib               0x000000010daa657f mono_runtime_invoke + 95
+  14  CollectionViewBugTest               0x0000000104496e18 _ZL30native_to_managed_trampoline_9P11objc_objectP13objc_selectorPP11_MonoMethodj + 280
+  15  CollectionViewBugTest               0x0000000104497619 -[__MonoMac_NSAsyncActionDispatcher xamarinApplySelector] + 41
+  16  Foundation                          0x00000001177ef67d __NSThreadPerformPerform + 179
+  17  CoreFoundation                      0x0000000110045ebd __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+  18  CoreFoundation                      0x0000000110045dfc __CFRunLoopDoSource0 + 157
+  19  CoreFoundation                      0x00000001100455f9 __CFRunLoopDoSources0 + 212
+  20  CoreFoundation                      0x000000011003fdb3 __CFRunLoopRun + 927
+  21  CoreFoundation                      0x000000011003f637 CFRunLoopRunSpecific + 560
+  22  GraphicsServices                    0x000000012477428a GSEventRunModal + 139
+  23  UIKitCore                           0x000000012c450425 -[UIApplication _run] + 994
+  24  UIKitCore                           0x000000012c455301 UIApplicationMain + 123
+  25  libxamarin-dotnet-debug.dylib       0x000000010d480a5a xamarin_UIApplicationMain + 58
+  26  libmonosgen-2.0.dylib               0x000000010dc8e639 do_icall + 345
+  27  libmonosgen-2.0.dylib               0x000000010dc8d143 do_icall_wrapper + 291
+  28  libmonosgen-2.0.dylib               0x000000010dc801a0 interp_exec_method + 3440
+  29  libmonosgen-2.0.dylib               0x000000010dc7da73 interp_runtime_invoke + 259
+  30  libmonosgen-2.0.dylib               0x000000010daa2938 mono_runtime_invoke_checked + 136
+  31  libmonosgen-2.0.dylib               0x000000010daaa94c do_exec_main_checked + 92
+  32  libmonosgen-2.0.dylib               0x000000010dbd9aa2 mono_jit_exec + 354
+  33  libxamarin-dotnet-debug.dylib       0x000000010d4c4e77 xamarin_main + 1927
+  34  CollectionViewBugTest               0x000000010452a324 main + 68
+  35  dyld                                0x000000010d09e2bf start_sim + 10
+  36  ???                                 0x0000000204ba1310 0x0 + 8669238032
+
+   at ObjCRuntime.Runtime.ThrowException(IntPtr gchandle)
+   at UIKit.UIApplication.UIApplicationMain(Int32 argc, String[] argv, IntPtr principalClassName, IntPtr delegateClassName)
+   at UIKit.UIApplication.Main(String[] args, Type principalClass, Type delegateClass)
+   at CollectionViewBugTest.Program.Main(String[] args) in /Users/ethanhipps/Projects/CollectionViewBugTest/CollectionViewBugTest/Platforms/iOS/Program.cs:line 13
+Native stack trace:
+  0   CoreFoundation                      0x00000001100e6378 __exceptionPreprocess + 242
+  1   libobjc.A.dylib                     0x000000011e653baf objc_exception_throw + 48
+  2   Foundation                          0x00000001176f66ac _userInfoForFileAndLine + 0
+  3   UIKitCore                           0x000000012b97d2a1 -[UICollectionView _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:collectionViewAnimator:] + 13198
+  4   UIKitCore                           0x000000012b978aa7 -[UICollectionView _updateSections:updateAction:] + 402
+  5   UIKitCore                           0x000000012b978b73 -[UICollectionView insertSections:] + 64
+  6   UIKit                               0x000000016929111d -[UICollectionViewAccessibility insertSections:] + 42
+  7   libxamarin-dotnet-debug.dylib       0x000000010d4c6379 xamarin_dyn_objc_msgSend + 217
+  8   ???                                 0x0000000150929ca7 0x0 + 5646752935
+  9   libmonosgen-2.0.dylib               0x000000010dc8d46a ves_pinvoke_method + 474
+  10  libmonosgen-2.0.dylib               0x000000010dc802c9 interp_exec_method + 3737
+  11  libmonosgen-2.0.dylib               0x000000010dc7da73 interp_runtime_invoke + 259
+  12  libmonosgen-2.0.dylib               0x000000010daa43ed mono_runtime_try_invoke + 157
+  13  libmonosgen-2.0.dylib               0x000000010daa657f mono_runtime_invoke + 95
+  14  CollectionViewBugTest               0x0000000104496e18 _ZL30native_to_managed_trampoline_9P11objc_objectP13objc_selectorPP11_MonoMethodj + 280
+  15  CollectionViewBugTest               0x0000000104497619 -[__MonoMac_NSAsyncActionDispatcher xamarinApplySelector] + 41
+  16  Foundation                          0x00000001177ef67d __NSThreadPerformPerform + 179
+  17  CoreFoundation                      0x0000000110045ebd __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+  18  CoreFoundation                      0x0000000110045dfc __CFRunLoopDoSource0 + 157
+  19  CoreFoundation                      0x00000001100455f9 __CFRunLoopDoSources0 + 212
+  20  CoreFoundation                      0x000000011003fdb3 __CFRunLoopRun + 927
+  21  CoreFoundation                      0x000000011003f637 CFRunLoopRunSpecific + 560
+  22  GraphicsServices                    0x000000012477428a GSEventRunModal + 139
+  23  UIKitCore                           0x000000012c450425 -[UIApplication _run] + 994
+  24  UIKitCore                           0x000000012c455301 UIApplicationMain + 123
+  25  libxamarin-dotnet-debug.dylib       0x000000010d480a5a xamarin_UIApplicationMain + 58
+  26  libmonosgen-2.0.dylib               0x000000010dc8e639 do_icall + 345
+  27  libmonosgen-2.0.dylib               0x000000010dc8d143 do_icall_wrapper + 291
+  28  libmonosgen-2.0.dylib               0x000000010dc801a0 interp_exec_method + 3440
+  29  libmonosgen-2.0.dylib               0x000000010dc7da73 interp_runtime_invoke + 259
+  30  libmonosgen-2.0.dylib               0x000000010daa2938 mono_runtime_invoke_checked + 136
+  31  libmonosgen-2.0.dylib               0x000000010daaa94c do_exec_main_checked + 92
+  32  libmonosgen-2.0.dylib               0x000000010dbd9aa2 mono_jit_exec + 354
+  33  libxamarin-dotnet-debug.dylib       0x000000010d4c4e77 xamarin_main + 1927
+  34  CollectionViewBugTest               0x000000010452a324 main + 68
+  35  dyld                                0x000000010d09e2bf start_sim + 10
+  36  ???                                 0x0000000204ba1310 0x0 + 8669238032
+2022-10-28 12:11:08.702904-0400 CollectionViewBugTest[57812:1068713] Unhandled managed exception: Objective-C exception thrown.  Name: NSInternalInconsistencyException Reason: Invalid update: invalid number of sections. The number of sections contained in the collection view after the update (3) must be equal to the number of sections contained in the collection view before the update (3), plus or minus the number of sections inserted or deleted (1 inserted, 0 deleted). Collection view: <UICollectionView: 0x7f9d7136ce00; frame = (0 0; 398 1700.33); clipsToBounds = YES; autoresize = W+H; gestureRecognizers = <NSArray: 0x600001d1dc50>; backgroundColor = UIExtendedGrayColorSpace 0 0; layer = <CALayer: 0x600001731580>; contentOffset: {0, 0}; contentSize: {398, 183}; adjustedContentInset: {0, 0, 0, 0}; layout: <Microsoft_Maui_Controls_Handlers_Items_ListViewLayout: 0x7f9d6f39ac70>; dataSource: <Microsoft_Maui_Controls_Handlers_Items_ReorderableItemsViewController_1: 0x7f9d6f529a40>>
+Native stack trace:
+  0   CoreFoundation                      0x00000001100e6378 __exceptionPreprocess + 242
+  1   libobjc.A.dylib                     0x000000011e653baf objc_exception_throw + 48
+  2   Foundation                          0x00000001176f66ac _userInfoForFileAndLine + 0
+  3   UIKitCore                           0x000000012b97d2a1 -[UICollectionView _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:collectionViewAnimator:] + 13198
+  4   UIKitCore                           0x000000012b978aa7 -[UICollectionView _updateSections:updateAction:] + 402
+  5   UIKitCore                           0x000000012b978b73 -[UICollectionView insertSections:] + 64
+  6   UIKit                               0x000000016929111d -[UICollectionViewAccessibility insertSections:] + 42
+  7   libxamarin-dotnet-debug.dylib       0x000000010d4c6379 xamarin_dyn_objc_msgSend + 217
+  8   ???                                 0x0000000150929ca7 0x0 + 5646752935
+  9   libmonosgen-2.0.dylib               0x000000010dc8d46a ves_pinvoke_method + 474
+  10  libmonosgen-2.0.dylib               0x000000010dc802c9 interp_exec_method + 3737
+  11  libmonosgen-2.0.dylib               0x000000010dc7da73 interp_runtime_invoke + 259
+  12  libmonosgen-2.0.dylib               0x000000010daa43ed mono_runtime_try_invoke + 157
+  13  libmonosgen-2.0.dylib               0x000000010daa657f mono_runtime_invoke + 95
+  14  CollectionViewBugTest               0x0000000104496e18 _ZL30native_to_managed_trampoline_9P11objc_objectP13objc_selectorPP11_MonoMethodj + 280
+  15  CollectionViewBugTest               0x0000000104497619 -[__MonoMac_NSAsyncActionDispatcher xamarinApplySelector] + 41
+  16  Foundation                          0x00000001177ef67d __NSThreadPerformPerform + 179
+  17  CoreFoundation                      0x0000000110045ebd __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+  18  CoreFoundation                      0x0000000110045dfc __CFRunLoopDoSource0 + 157
+  19  CoreFoundation                      0x00000001100455f9 __CFRunLoopDoSources0 + 212
+  20  CoreFoundation                      0x000000011003fdb3 __CFRunLoopRun + 927
+  21  CoreFoundation                      0x000000011003f637 CFRunLoopRunSpecific + 560
+  22  GraphicsServices                    0x000000012477428a GSEventRunModal + 139
+  23  UIKitCore                           0x000000012c450425 -[UIApplication _run] + 994
+  24  UIKitCore                           0x000000012c455301 UIApplicationMain + 123
+  25  libxamarin-dotnet-debug.dylib       0x000000010d480a5a xamarin_UIApplicationMain + 58
+  26  libmonosgen-2.0.dylib               0x000000010dc8e639 do_icall + 345
+  27  libmonosgen-2.0.dylib               0x000000010dc8d143 do_icall_wrapper + 291
+  28  libmonosgen-2.0.dylib               0x000000010dc801a0 interp_exec_method + 3440
+  29  libmonosgen-2.0.dylib               0x000000010dc7da73 interp_runtime_invoke + 259
+  30  libmonosgen-2.0.dylib               0x000000010daa2938 mono_runtime_invoke_checked + 136
+  31  libmonosgen-2.0.dylib               0x000000010daaa94c do_exec_main_checked + 92
+  32  libmonosgen-2.0.dylib               0x000000010dbd9aa2 mono_jit_exec + 354
+  33  libxamarin-dotnet-debug.dylib       0x000000010d4c4e77 xamarin_main + 1927
+  34  CollectionViewBugTest               0x000000010452a324 main + 68
+  35  dyld                                0x000000010d09e2bf start_sim + 10
+  36  ???                                 0x0000000204ba1310 0x0 + 8669238032
+ (ObjCRuntime.ObjCException)
+   at ObjCRuntime.Runtime.ThrowException(IntPtr gchandle)
+   at UIKit.UIApplication.UIApplicationMain(Int32 argc, String[] argv, IntPtr principalClassName, IntPtr delegateClassName)
+   at UIKit.UIApplication.Main(String[] args, Type principalClass, Type delegateClass)
+   at CollectionViewBugTest.Program.Main(String[] args) in /Users/ethanhipps/Projects/CollectionViewBugTest/CollectionViewBugTest/Platforms/iOS/Program.cs:line 13
+
+=================================================================
+  Native Crash Reporting
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+=================================================================
+  Native stacktrace:
+=================================================================
+  0x10dc7c3e4 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : mono_dump_native_crash_info
+  0x10dc2073e - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : mono_handle_native_crash
+  0x10de29e88 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : sigabrt_signal_handler.cold.1
+  0x10dc7bd18 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : sigabrt_signal_handler
+  0x122c71c1d - /usr/lib/system/libsystem_platform.dylib : _sigtramp
+  0x16df400000000000 - Unknown
+  0x12169ffe0 - /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_c.dylib : abort
+  0x10d4b1597 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libxamarin-dotnet-debug.dylib : xamarin_unhandled_exception_handler
+  0x10da5b2f5 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : mono_invoke_unhandled_exception_hook
+  0x10dc20345 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : mono_handle_exception_internal
+  0x10dc1e355 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : mono_handle_exception
+  0x10dc8c6a9 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : interp_throw
+  0x10dc7f5a9 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : interp_exec_method
+  0x10dc7da73 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : interp_runtime_invoke
+  0x10daa2938 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : mono_runtime_invoke_checked
+  0x10daaa94c - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : do_exec_main_checked
+  0x10dbd9aa2 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libmonosgen-2.0.dylib : mono_jit_exec
+  0x10d4c4e77 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/libxamarin-dotnet-debug.dylib : xamarin_main
+  0x10452a324 - /Users/ethanhipps/Library/Developer/CoreSimulator/Devices/FF2D32CD-90F0-43B2-BBFB-784A3636DF6B/data/Containers/Bundle/Application/966697F7-A942-4DC3-B247-1F8D2B8FE238/CollectionViewBugTest.app/CollectionViewBugTest : main
+  0x10d09e2bf - Unknown
+  0x204ba1310 - Unknown
+
+=================================================================
+  Basic Fault Address Reporting
+=================================================================
+Memory around native instruction pointer (0x122d5130e):0x122d512fe  ff ff c3 90 90 90 b8 48 01 00 02 49 89 ca 0f 05  .......H...I....
+0x122d5130e  73 08 48 89 c7 e9 aa 9a ff ff c3 90 90 90 b8 53  s.H............S
+0x122d5131e  00 00 02 49 89 ca 0f 05 73 08 48 89 c7 e9 92 9a  ...I....s.H.....
+0x122d5132e  ff ff c3 90 90 90 b8 83 01 00 02 49 89 ca 0f 05  ...........I....
+
+=================================================================
+  Managed Stacktrace:
+=================================================================
+=================================================================
