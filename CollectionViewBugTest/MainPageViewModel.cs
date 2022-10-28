@@ -19,14 +19,7 @@ public partial class MainPageViewModel : ObservableObject
     {
         await Task.Delay(1000);
         TestData.Clear();
-
-        PopulateCollection();
-    }
-
-    private void PopulateCollection()
-    {
         TestData.Add(new("Header 1", Data));
-        TestData.Add(new ("Header 2", Data));
-        TestData.Add(new ("Header 3", Data));
     }
+
 }
