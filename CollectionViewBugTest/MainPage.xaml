@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CollectionViewBugTest"
+             x:Class="CollectionViewBugTest.MainPage"
+             x:DataType="local:MainPageViewModel"
+             Padding="16">
+    <VerticalStackLayout Spacing="16" HorizontalOptions="Center">
+        <Button Command="{Binding ClearAndAddItemsCommand}" Text="Reset Collection" />
+
+        <CollectionView IsGrouped="true" ItemsSource="{Binding TestData}">
+            <CollectionView.HeaderTemplate>
+                <DataTemplate x:DataType="local:CollectionViewStringGroup">
+                    <Label Text="{Binding GroupHeader}" TextColor="Black" />
+                </DataTemplate>
+            </CollectionView.HeaderTemplate>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding }" TextColor="Black" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>
